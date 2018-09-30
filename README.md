@@ -1,7 +1,7 @@
 # Z80マイコンCPUボード
 
 - SBC8080バスにつながるZ80 CPUボードのデータ類です。
-  - CPUボード+[SBC8080 SUBボード](https://vintagechips.wordpress.com/2018/06/23/sbc8080-subルーズキット/)などとのセットでコンピューターとして動作します。(単独では動きません)
+  - CPUボード+[SBC8080 SUBルーズキット](https://vintagechips.wordpress.com/2018/06/23/sbc8080-subルーズキット/)などとのセットでコンピューターとして動作します。(単独では動きません)
 
 ## 回路図
 
