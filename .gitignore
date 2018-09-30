@@ -1,3 +1,4 @@
 # backup file
 *.bak
 *.*-bak
+.DS_Store
