@@ -5,7 +5,7 @@
 
 ## 回路図
 
-[Z80CPUB](KiCAD/Z80-CPUB.pdf)
+[Z80CPUB](img/Z80-CPUB.pdf)
 
 ## 部品表
 
