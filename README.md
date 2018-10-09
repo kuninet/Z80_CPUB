@@ -31,6 +31,9 @@
   - DMAは行なえません。(#BUSREQ/#BUSACKに対応していない)
   - DMAに伴う#IOR/Wや#MEMR/Wのハイインピーダンス対応を実施していません。
 
+## ライセンス
+
+- 本リポジトリのデータは MIT License のもとで公開します。[LICENSE.txt](LICENSE.txt)を参照して下さい。
 
 ## 参照
 
