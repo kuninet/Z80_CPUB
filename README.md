@@ -7,12 +7,15 @@
 
 [Z80CPUB](img/Z80-CPUB.pdf)
 
+- 詳しい回路の説明等は[wki](https://github.com/kuninet/Z80_CPUB/wiki)をご覧ください。
+
 ## 部品表
 
 [部品表](KiCAD/Z80-CPUB.ods)はOpenOffice等でひらくことのできるフォーマットとなっています。
 
 - 74HC04で水晶振動子を発振させています。CMOSタイプ必須です。
 - それ以外のロジックICは74LSタイプでも動作すると思います。
+- 詳しい部品の使い方の説明等は[wki](https://github.com/kuninet/Z80_CPUB/wiki)をご覧ください。
 
 ## ファイル/ディレクトリ
 
@@ -31,6 +34,9 @@
   - DMAは行なえません。(#BUSREQ/#BUSACKに対応していない)
   - DMAに伴う#IOR/Wや#MEMR/Wのハイインピーダンス対応を実施していません。
 
+## ライセンス
+
+- 本リポジトリのデータは MIT License のもとで公開します。[LICENSE.txt](LICENSE.txt)を参照して下さい。
 
 ## 参照
 
