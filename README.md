@@ -3,13 +3,14 @@
 - SBC8080バスにつながるZ80 CPUボード KZ80-CPUB のデータ類です。
   - CPUボード+[SBC8080 SUBルーズキット](https://vintagechips.wordpress.com/2018/06/23/sbc8080-subルーズキット/)などとのセットでコンピューターとして動作します。(単独では動きません)
 
+- wikiページは以下になります。
+  - https://github.com/kuninet/Z80_CPUB/wiki
+
 ## 回路図
 
 [Z80CPUB](img/Z80-CPUB.pdf)
 
-- 詳しい回路の説明等は[以下のwiki](https://github.com/kuninet/Z80_CPUB/wiki)をご覧ください。
-
-https://github.com/kuninet/Z80_CPUB/wiki
+- 詳しい回路の説明等は[wiki](https://github.com/kuninet/Z80_CPUB/wiki)をご覧ください。
 
 ## 部品表
 
@@ -17,9 +18,7 @@ https://github.com/kuninet/Z80_CPUB/wiki
 
 - 74HC04で水晶振動子を発振させています。CMOSタイプ必須です。
 - それ以外のロジックICは74LSタイプでも動作すると思います。
-- 詳しい部品の使い方の説明等は[以下のwiki](https://github.com/kuninet/Z80_CPUB/wiki)をご覧ください。
-
-https://github.com/kuninet/Z80_CPUB/wiki
+- 詳しい部品の使い方の説明等は[wiki](https://github.com/kuninet/Z80_CPUB/wiki)をご覧ください。
 
 ## ファイル/ディレクトリ
 
