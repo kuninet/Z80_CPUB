@@ -1,0 +1,100 @@
+
+(rules PCB Z80-CPUB
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2454)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 203.2)
+    (clear 203.4)
+    (clear 101.6 (type smd_to_turn_gap))
+    (clear 50.8 (type smd_smd))
+  )
+  (padstack "Via[0-1]_889:635_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_889:635_um" "Via[0-1]_889:635_um" default
+  )
+  (via 
+    "Via[0-1]_889:635_um-kicad_default" "Via[0-1]_889:635_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_889:635_um-BOLD" "Via[0-1]_889:635_um" BOLD
+  )
+  (via_rule
+    default "Via[0-1]_889:635_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_889:635_um-kicad_default"
+  )
+  (via_rule
+    BOLD "Via[0-1]_889:635_um-BOLD"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C6-Pad1)" "Net-(C7-Pad1)" CLK D0 D1 D2 D3 D4
+    D5 D6 D7 ~IORD ~MEMRD ~IOWR ~MEMWR RES
+    INT A0 A1 A2 A3 A4 A5 A6
+    A7 A8 A9 A10 A11 A12 A13 A14
+    A15 "Net-(R3-Pad1)" "Net-(S1-Pad1)" /~INT "Net-(U1-Pad18)" /~MREQ /~IOREQ /~RD
+    /~WR "Net-(U1-Pad23)" "Net-(U1-Pad26)" "Net-(U1-Pad27)" "Net-(U1-Pad28)" "Net-(U2-Pad8)" "Net-(U2-Pad10)" "Net-(U2-Pad12)"
+    "Net-(U2-Pad6)" "Net-(U3-Pad12)" "Net-(D2-Pad1)" HOLD RDYIN ~RESIN "Net-(U1-Pad25)" HLDA
+    "Net-(U4-Pad3)" "Net-(U4-Pad8)" "Net-(U4-Pad6)" "Net-(U4-Pad11)" "Net-(U5-Pad6)" "Net-(U5-Pad11)" ~INTA "Net-(U5-Pad8)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class BOLD
+    VCC GND "Net-(J2-Pad1)" "Net-(J2-Pad3)"
+    (clearance_class BOLD)
+    (via_rule BOLD)
+    (rule
+      (width 609.6)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
