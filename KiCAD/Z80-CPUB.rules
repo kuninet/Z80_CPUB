@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2454)
+    (start_pass_no 6359)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -73,10 +73,11 @@
     D5 D6 D7 ~IORD ~MEMRD ~IOWR ~MEMWR RES
     INT A0 A1 A2 A3 A4 A5 A6
     A7 A8 A9 A10 A11 A12 A13 A14
-    A15 "Net-(R3-Pad1)" "Net-(S1-Pad1)" /~INT "Net-(U1-Pad18)" /~MREQ /~IOREQ /~RD
-    /~WR "Net-(U1-Pad23)" "Net-(U1-Pad26)" "Net-(U1-Pad27)" "Net-(U1-Pad28)" "Net-(U2-Pad8)" "Net-(U2-Pad10)" "Net-(U2-Pad12)"
-    "Net-(U2-Pad6)" "Net-(U3-Pad12)" "Net-(D2-Pad1)" HOLD RDYIN ~RESIN "Net-(U1-Pad25)" HLDA
-    "Net-(U4-Pad3)" "Net-(U4-Pad8)" "Net-(U4-Pad6)" "Net-(U4-Pad11)" "Net-(U5-Pad6)" "Net-(U5-Pad11)" ~INTA "Net-(U5-Pad8)"
+    A15 "Net-(R3-Pad1)" "Net-(S1-Pad1)" /~INT "Net-(U1-Pad18)" /~MREQ /~IOREQ "Net-(U1-Pad23)"
+    "Net-(U1-Pad27)" "Net-(U1-Pad28)" "Net-(U2-Pad8)" "Net-(U2-Pad10)" "Net-(U2-Pad12)" "Net-(U2-Pad6)" "Net-(U3-Pad12)" "Net-(D2-Pad1)"
+    HOLD RDYIN ~RESIN "Net-(U1-Pad25)" HLDA "Net-(U4-Pad3)" "Net-(U4-Pad8)" "Net-(U4-Pad6)"
+    "Net-(U4-Pad11)" "Net-(U5-Pad6)" "Net-(U5-Pad11)" ~INTA "Net-(U5-Pad8)" ~RD ~WR ~RESET
+    "Net-(U5-Pad3)" "Net-(U8-Pad8)" "Net-(U8-Pad11)" "Net-(U7-Pad1)" "Net-(U5-Pad5)" "Net-(U5-Pad9)" "Net-(U7-Pad9)" "Net-(U7-Pad8)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
