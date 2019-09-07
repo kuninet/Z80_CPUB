@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6359)
+    (start_pass_no 4093)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -26,43 +26,43 @@
     )
   )
   (rule
-    (width 203.2)
-    (clear 203.4)
-    (clear 101.6 (type smd_to_turn_gap))
-    (clear 50.8 (type smd_smd))
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
   )
-  (padstack "Via[0-1]_889:635_um"
+  (padstack "Via[0-1]_800:400_um"
     (shape
-      (circle F.Cu 889.0 0.0 0.0)
+      (circle F.Cu 800.0 0.0 0.0)
     )
     (shape
-      (circle B.Cu 889.0 0.0 0.0)
+      (circle B.Cu 800.0 0.0 0.0)
     )
     (attach off)
   )
   (via 
-    "Via[0-1]_889:635_um" "Via[0-1]_889:635_um" default
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
-    "Via[0-1]_889:635_um-kicad_default" "Via[0-1]_889:635_um" "kicad_default"
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_889:635_um-BOLD" "Via[0-1]_889:635_um" BOLD
+    "Via[0-1]_800:400_um-BOLD" "Via[0-1]_800:400_um" BOLD
   )
   (via_rule
-    default "Via[0-1]_889:635_um"
+    default "Via[0-1]_800:400_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_889:635_um-kicad_default"
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
   )
   (via_rule
-    BOLD "Via[0-1]_889:635_um-BOLD"
+    BOLD "Via[0-1]_800:400_um-BOLD"
   )
   (class default
     (clearance_class default)
     (via_rule default)
     (rule
-      (width 203.2)
+      (width 250.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
@@ -73,15 +73,16 @@
     D5 D6 D7 ~IORD ~MEMRD ~IOWR ~MEMWR RES
     INT A0 A1 A2 A3 A4 A5 A6
     A7 A8 A9 A10 A11 A12 A13 A14
-    A15 "Net-(R3-Pad1)" "Net-(S1-Pad1)" /~INT "Net-(U1-Pad18)" /~MREQ /~IOREQ "Net-(U1-Pad23)"
-    "Net-(U1-Pad27)" "Net-(U1-Pad28)" "Net-(U2-Pad8)" "Net-(U2-Pad10)" "Net-(U2-Pad12)" "Net-(U2-Pad6)" "Net-(U3-Pad12)" "Net-(D2-Pad1)"
-    HOLD RDYIN ~RESIN "Net-(U1-Pad25)" HLDA "Net-(U4-Pad3)" "Net-(U4-Pad8)" "Net-(U4-Pad6)"
+    A15 "Net-(R3-Pad1)" "Net-(S1-Pad1)" "Net-(U2-Pad8)" "Net-(U2-Pad10)" "Net-(U2-Pad12)" "Net-(U2-Pad6)" "Net-(U3-Pad12)"
+    "Net-(D2-Pad1)" HOLD RDYIN ~RESIN HLDA "Net-(U4-Pad3)" "Net-(U4-Pad8)" "Net-(U4-Pad6)"
     "Net-(U4-Pad11)" "Net-(U5-Pad6)" "Net-(U5-Pad11)" ~INTA "Net-(U5-Pad8)" ~RD ~WR ~RESET
-    "Net-(U5-Pad3)" "Net-(U8-Pad8)" "Net-(U8-Pad11)" "Net-(U7-Pad1)" "Net-(U5-Pad5)" "Net-(U5-Pad9)" "Net-(U7-Pad9)" "Net-(U7-Pad8)"
+    "Net-(U5-Pad3)" "Net-(U7-Pad1)" "Net-(U5-Pad5)" "Net-(U5-Pad9)" "Net-(U7-Pad9)" "Net-(U7-Pad8)" ~BUSACK ~BUSREQ
+    ~M1 ~RFSH ~INT RN22 ~HALT ~MREQ ~IOREQ RN24
+    "Net-(U3-Pad8)" RN23 "Net-(U3-Pad2)" "Net-(J3-Pad14)" "Net-(RN2-Pad6)" "Net-(RN2-Pad7)" "Net-(RN2-Pad8)" "Net-(RN2-Pad9)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
-      (width 203.2)
+      (width 250.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
@@ -92,7 +93,7 @@
     (clearance_class BOLD)
     (via_rule BOLD)
     (rule
-      (width 609.6)
+      (width 600.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
