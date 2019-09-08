@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 21)
+    (drawings 20)
     (tracks 1083)
     (zones 0)
     (modules 40)
@@ -2857,9 +2857,6 @@
     )
   )
 
-  (gr_text "SBC8080 BUS" (at 144 65.6 90) (layer F.SilkS) (tstamp 5D746339)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
   (gr_text "Z80 CTRL" (at 77.8 114.2 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

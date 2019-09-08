@@ -3,22 +3,9 @@
 - SBC8080バスにつながるZ80 CPUボード KZ80-CPUB のデータ類です。
   - CPUボード+[SBC8080 SUBルーズキット](https://vintagechips.wordpress.com/2018/06/23/sbc8080-subルーズキット/)などとのセットでコンピューターとして動作します。(単独では動きません)
 
-- wikiページは以下になります。
+- 回路図、部品等の詳しい説明を記載したwikiページは以下になります。
   - https://github.com/kuninet/Z80_CPUB/wiki
 
-## 回路図
-
-[Z80CPUB](img/Z80-CPUB.pdf)
-
-- 詳しい回路の説明等は[wiki](https://github.com/kuninet/Z80_CPUB/wiki)をご覧ください。
-
-## 部品表
-
-[部品表](KiCAD/Z80-CPUB.ods)はOpenOffice等でひらくことのできるフォーマットとなっています。
-
-- 74HC04で水晶振動子を発振させています。CMOSタイプ必須です。
-- それ以外のロジックICは74LSタイプでも動作すると思います。
-- 詳しい部品の使い方の説明等は[wiki](https://github.com/kuninet/Z80_CPUB/wiki)をご覧ください。
 
 ## ファイル/ディレクトリ
 
@@ -33,7 +20,7 @@
 
 ## 注意点
 
-- SBC8080ルーズキットと完全互換ではありません。
+- REV1基板はSBC8080ルーズキットと完全互換ではありません。
   - DMAは行なえません。(#BUSREQ/#BUSACKに対応していない)
   - DMAに伴う#IOR/Wや#MEMR/Wのハイインピーダンス対応を実施していません。
 
